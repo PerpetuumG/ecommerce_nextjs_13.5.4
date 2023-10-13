@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Header from '@/components/header/Header';
 
 export const metadata: Metadata = {
   title: 'Ecommerce',
@@ -10,9 +11,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body>
-        <header>This is a header</header>
+        <Header />
         {children}
-        <footer>This is a footer</footer>
+        {/*<footer>This is a footer</footer>*/}
       </body>
     </html>
   );
